@@ -91,14 +91,30 @@ var siteConfig = {
   "messages": {},
   "occurrenceSearch": {
     "scope": {
-      "type": "in",
-      "key": "publishingOrg",
-      "values": [
-        "760d5f24-4c04-40da-9646-1b2c935da502",
-        "2e7df380-8356-4533-bcb3-5459e23c794e",
-        "8e1a97a0-3ca8-11d9-8439-b8a03c50a862"
+      "type": "or",
+      "predicates": [
+          {
+              "key": "publishingCountry",
+              "type": "equals",
+              "value": "SE"
+          },
+          {
+              "type": "and",
+              "predicates": [
+                  {
+                      "key": "country",
+                      "type": "equals",
+                      "value": "SE"
+                  },
+                  {
+                      "key": "notIssues",
+                      "type": "equals",
+                      "value": "COUNTRY_COORDINATE_MISMATCH"
+                  }
+              ]
+          }
       ]
-    },
+  },
     "highlightedFilters": [
       "taxonKey",
       "verbatimScientificName",
@@ -136,9 +152,9 @@ var siteConfig = {
       "download"
     ],
     "mapSettings": {
-      "lat": 52,
-      "lng": 12,
-      "zoom": 4.911544076366507
+      "lat": 63.00,
+      "lng": 16.00,
+      "zoom": 5.0
     }
   },
   "collectionSearch": {
@@ -148,6 +164,7 @@ var siteConfig = {
     scope: {
       // TODO: you should add a scope here if you need search to be limited to a subset
       // search filters have the format {field: [values]}
+      country: "SE",
       active: true
     },
   },
@@ -158,6 +175,7 @@ var siteConfig = {
     scope: {
       // TODO: you should add a scope here if you need search to be limited to a subset
       // search filters have the format {field: [values]}
+      country: "SE",
       active: true
     }
   },
@@ -167,21 +185,29 @@ var siteConfig = {
     scope: {
       // TODO: you should add a scope here if you need search to be limited to a subset
       // search filters have the format {field: [values]}
-      type: ['OCCURRENCE', 'CHECKLIST']
+      publishingCountry: "SE"
     },
   },
   "publisherSearch": {},
   "literatureSearch": {
     "scope": {
-      // TODO: you should add a scope here if you need search to be limited to a subset
-      // literature search use the predicate format similar to occurrence search
-      "type": "in",
-      "key": "publishingOrganizationKey",
-      "values": [
-        "760d5f24-4c04-40da-9646-1b2c935da502",
-        "2e7df380-8356-4533-bcb3-5459e23c794e",
-        "8e1a97a0-3ca8-11d9-8439-b8a03c50a862"
+      "type": "or",
+      "predicates": [
+          {
+              "type": "in",
+              "key": "countriesOfResearcher",
+              "values": [
+                  "SE"
+              ]
+          },
+          {
+              "type": "in",
+              "key": "countriesOfCoverage",
+              "values": [
+                  "SE"
+              ]
+          }
       ]
-    }
+  }
   }
 }
