@@ -19,17 +19,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Template_site # the title of your site should go here
-email: your-email@example.com
-description: >- # this means to ignore newlines (until baseurl:)
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+title: Swedish Biodiversity Data Infrastructure
+email: support@biodiversitydata.se
+description: >-
+  The Swedish Biodiversity Data Infrastructure (SBDI) is a national initiative
+  to make biodiversity data available and accessible for research, education,
+  and conservation.baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://template_site.hp.gbif.org/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # SOCIAL PROFILES that will show in the footer
-email: info@gbif.org                                      # Social icon in footer
+email: support@biodiversitydata.se                                      # Social icon in footer
 twitter_username: yourname # if you have an account you want to link to. Else comment this line out
 github_username:  yourname # if you have an account you want to link to. Else comment this line out
 bluesky_username: yourname.org                            # Social icon in footer
@@ -94,6 +93,9 @@ exclude:
   - en/data/disabled/
   - README.md
   - /**/README.md  # exclude all README.md files in any folder
+  - Makefile
+  - docker-compose.yml
+  - dev.Dockerfile
 
 permalink: pretty # will strip extensions like .html from urls
 
