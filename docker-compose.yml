@@ -7,8 +7,6 @@ services:
     build: 
       context: .
       dockerfile: dev.Dockerfile
-    environment:
-      - CODESPACES
     ports:
       - 4000:4000
       - 35729:35729
