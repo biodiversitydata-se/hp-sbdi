@@ -10,6 +10,10 @@
     href: /dataset/search
   - text: Collections
     href: /collection/search
+  - text: Institutions
+    href: /institution/search
+  - text: Publishers
+    href: /publisher/search
   - text: Literature
     href: /literature/search
 # - text: Links

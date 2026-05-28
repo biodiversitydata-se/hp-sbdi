@@ -31,17 +31,23 @@ var siteConfig = {
       "id": "institutionKey"
     },
     {
+      "id": "publisherSearch"
+    },
+    {
+      "id": "publisherKey"
+    },
+    {
       "id": "literatureSearch"
-    }
+    },
   ],
   "disableInlineTableFilterButtons": false,
   "availableCatalogues": [
-    // TODO: you should remove types you do not want to use
     "OCCURRENCE",
     "DATASET",
     "COLLECTION",
     "INSTITUTION",
-    "LITERATURE"
+    "PUBLISHER",
+    "LITERATURE",
   ],
   "dataHeader": {
     "enableApiPopup": false,
@@ -58,8 +64,8 @@ var siteConfig = {
       "defaultMapStyle": "BRIGHT",
       "options": {
         "MERCATOR": [
+          "NATURAL",
           "BRIGHT",
-          "NATURAL"
         ]
       }
     }
@@ -147,7 +153,7 @@ var siteConfig = {
       "table",
       "gallery",
       "map",
-      "clusters",
+//      "clusters",
       "dashboard",
       "download"
     ],
@@ -162,19 +168,15 @@ var siteConfig = {
     // highlightedFilters: ['q', 'type', 'publishingOrg', 'license'],
     // defaultTableColumns: ['title', 'description', 'publisher', 'type', 'occurrenceCount', 'literatureCount'],
     scope: {
-      // TODO: you should add a scope here if you need search to be limited to a subset
-      // search filters have the format {field: [values]}
       country: "SE",
       active: true
     },
   },
   "institutionSearch": {
-    // excludedFilters: ['country', 'active'],
+    excludedFilters: ['country', 'active'],
     // highlightedFilters: ['q', 'type'],
     // defaultTableColumns: ['title', 'type'],
     scope: {
-      // TODO: you should add a scope here if you need search to be limited to a subset
-      // search filters have the format {field: [values]}
       country: "SE",
       active: true
     }
@@ -183,12 +185,16 @@ var siteConfig = {
     excludedFilters: ['publishingCountry', 'networkKey', 'projectId', 'hostingOrg'],
     highlightedFilters: ['q', 'type', 'publishingOrg', 'license'],
     scope: {
-      // TODO: you should add a scope here if you need search to be limited to a subset
-      // search filters have the format {field: [values]}
       publishingCountry: "SE"
     },
   },
-  "publisherSearch": {},
+  "publisherSearch": {
+    excludedFilters: ['country'],
+    scope: {
+      country: "SE",
+      active: true
+    },
+  },
   "literatureSearch": {
     "scope": {
       "type": "or",
