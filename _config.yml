@@ -29,15 +29,15 @@ url: "https://template_site.hp.gbif.org/" # the base hostname & protocol for you
 
 # SOCIAL PROFILES that will show in the footer
 email: support@biodiversitydata.se                                      # Social icon in footer
-twitter_username: yourname # if you have an account you want to link to. Else comment this line out
-github_username:  yourname # if you have an account you want to link to. Else comment this line out
-bluesky_username: yourname.org                            # Social icon in footer
-youtube_username: yourname                              # Social icon in footer
-facebook_username: yourname                             # Social icon in footer
-flickr_username: yourname                               # Social icon in footer
-instagram_username: yourname                              # Social icon in footer
-mastodon_url: https://something.goes/@here                # Social icon in footer
-linkedin_url: https://www.linkedin.com/company/yourname # Social icon in footer
+#twitter_username: yourname # if you have an account you want to link to. Else comment this line out
+github_username:  biodiversitydata-se # if you have an account you want to link to. Else comment this line out
+#bluesky_username: yourname.org                            # Social icon in footer
+youtube_url: "https://www.youtube.com/@sbdi-swedishbiodiversityda8763"                              # Social icon in footer
+#facebook_username: yourname                             # Social icon in footer
+#flickr_username: yourname                               # Social icon in footer
+#instagram_username: yourname                              # Social icon in footer
+#mastodon_url: https://something.goes/@here                # Social icon in footer
+#linkedin_url: https://www.linkedin.com/company/yourname # Social icon in footer
 
 # Build settings
 theme: minima
