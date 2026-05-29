@@ -1,19 +1,29 @@
-// $navbar-dropdown-arrow: #f00;
+// Colors
+$color-sbdi-dark-blue: #284966; 
+
+// Overrides
+$family-primary: Roboto, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$navbar-height: 2.7rem;
+
 @import "theme/_main";
 
-// You can add additional styling here
-@import "_example"; // either as inline css or as a separate file as in this case
-
-.navbar-link {
-    font-size: 1.2rem;
-    font-weight: bold;
+.navbar {
+    padding-left: 2rem;
+}
+.navbar-logo {
+    display: none;
+}
+.navbar--hasWhiteText .navbar-top-item:hover,
+.navbar--hasWhiteText .navbar-top-item:active,
+.navbar--hasWhiteText .navbar-top-item:focus {
+    background-color: $color-sbdi-dark-blue !important;
 }
 
 .footer {
     padding: 0;
 }
 .footer-hostedby {
-    background-color: #284966;
+    background-color: $color-sbdi-dark-blue;
 }
 .footer-groups .footer-column:first-child {
     flex-grow: 1;

@@ -4,8 +4,7 @@ run:
 stop:
 	docker compose down
 
-restart:
-	docker compose restart
+restart: stop run
 
 rebuild: stop
 	docker build --no-cache --file dev.Dockerfile --tag biodiversitydata-se/hosted-portal-lab .
