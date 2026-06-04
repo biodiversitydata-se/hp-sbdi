@@ -4,33 +4,50 @@
 
 - text: Home
   href: /
-- text: Data
+- text: Explore data
   menu: 
-  - text: Occurrences
+  - text: Browse data
     href: /occurrence/search
-  - text: Datasets
-    href: /dataset/search
-  - text: Collections
-    href: /collection/search
-  - text: Institutions
-    href: /institution/search
-  - text: Publishers
-    href: /publisher/search
-  - text: Literature
-    href: /literature/search
-# - text: Links
-#   menu: # Dropdown menu (one level deep only)
-#   - text: Base theme demo
-#     href: https://hp-base-theme.gbif-staging.org/
-#   - text: Other sites using the theme
-#     href: https://github.com/gbif/?q=hp-&type=all&language=&sort=
-#   - text: "---" # Divider to separate blocks of menu items (at least 3 "-")
-#   - text: "Docs" # Title for block of menu items
-#   - text: Jekyll documentation
-#     href: https://jekyllrb.com/docs/pages/
-#   - text: Markdown tutorial
-#     href: https://guides.github.com/features/mastering-markdown/
-#   - text: YAML tutorial
-#     href: https://dev.to/paulasantamaria/introduction-to-yaml-125f
-# - text: News
-#   href: /news/
+  - text: "---"
+  - text: More tools and data
+    href: /explore-data/
+  - text: Programming and API:s
+    href: /explore-data/programming/
+  - text: Acknowledging SBDI
+    href: /explore-data/acknowledging-sbdi/
+- text: Publish data
+  menu:
+  - text: How to publish data
+    href: /publish-data/
+  - text: SBDI data policy and vision
+    href: /publish-data/sbdi-data-policy-and-vision/
+- text: Events
+  menu:
+  - text: Our events
+    href: /events/
+  - text: Other important events
+    href: /events/other/
+- text: Support
+  menu:
+  - text: Overview
+    href: /support/
+  - text: Training
+    href: /support/training/
+  - text: Webinars
+    href: /support/webinars/
+- text: About
+  menu:
+  - text: Overview
+    href: /about/
+  - text: Organization
+  - text: Consortium partners
+    href: /about/organization/consortium-partners/
+  - text: Executive office
+    href: /about/organization/executive-office/
+  - text: Governance
+    href: /about/organization/governance/
+  - text: "---"
+  - text: Contact
+    href: /about/contact/
+  - text: News
+    href: /about/news/
