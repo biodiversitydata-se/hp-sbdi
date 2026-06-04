@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Overview
+title: About SBDI
 permalink: /about/
 ---
 # {{ page.title }}
@@ -9,7 +9,7 @@ permalink: /about/
 
 Serving as the **Swedish node of the Global Biodiversity Information Facility (GBIF)**, SBDI enables scientists, policymakers, and other stakeholders to address the biodiversity crisis with reliable data and innovative digital solutions.
 
-<section class="mt-4 mb-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6" aria-label="Partners">
+<section class="about--logos" aria-label="Partners">
 {% for partner in site.data.partners %}
   <a href="{{ partner.link }}" title="{{ partner.title }}">
     <img src="/uploads/partners/{{ partner.image }}" alt="" aria-hidden="true">
@@ -25,3 +25,6 @@ Serving as the **Swedish node of the Global Biodiversity Information Facility (G
 - [Organizational and Technical overview](/uploads/SBDI-Organizational-and-Technical-Overview.pdf)
 - [Equality plan](/uploads/Equality-Plan_SBDI_ENG.pdf)
 - [FAIR and Open](https://fairsharing.org/)
+
+## Contact
+If you have any questions, suggestions, or need help with finding and publishing biodiversity data – contact us via our [online support form](https://docs.biodiversitydata.se/support/).

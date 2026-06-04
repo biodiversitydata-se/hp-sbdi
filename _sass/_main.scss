@@ -53,15 +53,29 @@ a.navbar-link:hover {
     margin: 0 24px 6px 24px;
 }
 
-// Content
+// Framework
 .article {
     max-width: 80rem;
+}
+.article--toc {
+    max-width: 100rem;
 }
 
 a, a:hover {
     text-decoration: underline;
 }
-
 a.button, a.button:hover {
     text-decoration: none;
+}
+
+// Content
+.about--logos {
+    display: grid; 
+    grid-template-columns: auto auto auto auto auto auto; 
+    column-gap: 24px; 
+    row-gap:24px
+}
+.about--logos img {
+    max-width: 100%;
+    height: 150px;
 }
