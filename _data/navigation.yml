@@ -18,19 +18,9 @@
 - text: Publish data
   href: /publish-data/
 - text: Events
-  menu:
-  - text: Our events
-    href: /events/
-  - text: Other important events
-    href: /events/other/
+  href: /events/
 - text: Support
-  menu:
-  - text: Overview
-    href: /support/
-  - text: Training
-    href: /support/training/
-  - text: Webinars
-    href: /support/webinars/
+  href: /support/
 - text: About
   menu:
   - text: Overview

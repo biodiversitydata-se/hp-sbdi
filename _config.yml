@@ -97,6 +97,12 @@ exclude:
   - docker-compose.yml
   - dev.Dockerfile
 
+collections:
+  courses:
+    output: true
+    sort_by: sort_order
+    permalink: "/support/training/courses/:slug/"
+
 permalink: pretty # will strip extensions like .html from urls
 
 defaults:

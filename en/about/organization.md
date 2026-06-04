@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Organization
+permalink: /about/:basename/
 toc: true
 tocMaxDepth: 2
-permalink: /about/:basename/
 ---
 # {{ page.title }}
 
