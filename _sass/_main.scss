@@ -9,6 +9,8 @@ $link: $color-sbdi-dark-blue;
 $link-hover: darken($link, 20%);
 $content-heading-weight: 500;
 $navbar-height: 2.7rem;
+$box-background-color: oklch(96.8% 0.007 247.896);
+$box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 
 @import "theme/_main";
 

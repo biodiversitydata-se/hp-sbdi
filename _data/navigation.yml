@@ -16,11 +16,7 @@
   - text: Acknowledging SBDI
     href: /explore-data/acknowledging-sbdi/
 - text: Publish data
-  menu:
-  - text: How to publish data
-    href: /publish-data/
-  - text: SBDI data policy and vision
-    href: /publish-data/sbdi-data-policy-and-vision/
+  href: /publish-data/
 - text: Events
   menu:
   - text: Our events
