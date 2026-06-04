@@ -122,3 +122,20 @@ dd:after {
     max-width: 100%;
     height: 150px;
 }
+
+.organizations--partners {
+    clear: both;
+    overflow: auto;
+}
+.organizations--partners h3 {
+    margin-top: 2rem;
+}
+.organizations--partners img {
+    float: left;
+    height: 100px;
+}
+@media screen and (min-width: 1024px) {
+    .organizations--partners img {
+        height: 150px;
+    }
+}

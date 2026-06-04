@@ -11,7 +11,7 @@ tocMaxDepth: 2
 The SBDI Consortium consists of eleven partner organizations. Below we list the SBDI Consortium partners and describe their responsibilities, contributions and skills.
 
 {% for partner in site.data.partners %}
-  <article class="clear-both overflow-auto">
+  <article class="organizations--partners">
     <h3>{{ partner.title }}{% if partner.abbreviation %} ({{ partner.abbreviation }}){% endif %}</h3>
     <img class="w-30 h-30 lg:w-36 lg:h-36 mr-4 lg:mr-6 float-left" src="/uploads/partners/{{ partner.image }}" alt="Logotype {{ partner.title }}" aria-hidden="true">
     <p>{{ partner.description }}</p>
@@ -39,7 +39,7 @@ The SBDI Executive Office (ExO) manages the daily business of SBDI and coordinat
 {% endfor %}
 </div>
 
-## Govnernance
+## Governance
 
 ### Steering committee
 SBDI is governed by an independent Steering Committee (SC) composed of seven representatives with wide experience from research and research infrastructure in Sweden and abroad.
