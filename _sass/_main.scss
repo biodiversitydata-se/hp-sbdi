@@ -68,7 +68,50 @@ a.button, a.button:hover {
     text-decoration: none;
 }
 
+dt, .content dt {
+    display: inline;
+    font-weight: 700;
+}
+dd, .content dd {
+    display: inline;
+    margin-left: 0.4rem;
+}
+dd:after {
+    content: "";
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+.link-icon {
+    background-image: url('/assets/images/link-icon.svg');
+    background-repeat: no-repeat;
+    padding-left: 1.75rem;
+    text-decoration: none;
+}
+.link-icon:hover {
+    text-decoration: underline;
+}
+
 // Content
+.support--courses article {
+    border-bottom: 4px solid oklch(92.9% 0.013 255.508);
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+.support--courses article:last-child {
+    border-bottom: none;
+}
+.support--courses article h3 {
+    color: $color-sbdi-dark-blue;
+}
+
+.support--webinars article h4 {
+    color: $color-sbdi-dark-blue;
+}
+.support--webinars article p {
+    margin-bottom: 1.3rem;
+}
+ 
 .about--logos {
     display: grid; 
     grid-template-columns: auto auto auto auto auto auto; 

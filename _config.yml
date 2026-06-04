@@ -101,7 +101,7 @@ collections:
   courses:
     output: true
     sort_by: sort_order
-    permalink: "/support/training/courses/:slug/"
+    permalink: "/support/courses/:slug/"
 
 permalink: pretty # will strip extensions like .html from urls
 
@@ -117,6 +117,12 @@ defaults:
       layout: "post"
       permalink: "/post/:year/:slug/"   # Use /post/yyyy/{filename}/ as permalink for all posts
   
+  - scope:
+      path: ""
+      type: courses
+    values:
+      layout: course-item
+
   - scope:
       path: "es/" # For anything in the "es" folder the default is to set the lang frontMatter property to "es" . this should be deleted or adapted to your site if you support other languages
     values:
