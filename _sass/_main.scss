@@ -1,14 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 // Colors
 $color-sbdi-dark-blue: #284966; 
 
 // Overrides
 $family-primary: Roboto, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$link: $color-sbdi-dark-blue;
+$link-hover: darken($link, 20%);
+$content-heading-weight: 500;
 $navbar-height: 2.7rem;
 
 @import "theme/_main";
 
+// Navbar
+header.container {
+    padding-left: 3rem;
+}
+header.container a {
+    text-decoration: none;
+}
 .navbar {
-    padding-left: 2rem;
+    padding-left: 20rem;
 }
 .navbar-logo {
     display: none;
@@ -18,7 +30,14 @@ $navbar-height: 2.7rem;
 .navbar--hasWhiteText .navbar-top-item:focus {
     background-color: $color-sbdi-dark-blue !important;
 }
+a.navbar-item, 
+a.navbar-item:hover, 
+a.navbar-link,
+a.navbar-link:hover {
+    text-decoration: none;
+}
 
+// Footer
 .footer {
     padding: 0;
 }
@@ -30,4 +49,17 @@ $navbar-height: 2.7rem;
 }
 .footer-groups .footer-column {
     margin: 0 24px 6px 24px;
+}
+
+// Content
+.article {
+    max-width: 80rem;
+}
+
+a, a:hover {
+    text-decoration: underline;
+}
+
+a.button, a.button:hover {
+    text-decoration: none;
 }

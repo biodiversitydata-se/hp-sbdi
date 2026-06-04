@@ -15,9 +15,9 @@ columns:
   - name: 
     links:
     - text: Accessibility
-      href: https://biodiversitydata.se/accessibility/
+      href: /accessibility/
     - text: Privacy Policy
-      href: https://biodiversitydata.se/privacy-policy/
+      href: /privacy-policy/
 
 
   # EXAMPLE - just leave this commented out at the bottom of the file for future reference
