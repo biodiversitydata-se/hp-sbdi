@@ -92,6 +92,13 @@ dd:after {
     text-decoration: underline;
 }
 
+.icon-default {
+    display: inline;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+    margin-bottom: -0.25rem;
+}
+
 // Content
 .support--courses article {
     border-bottom: 4px solid oklch(92.9% 0.013 255.508);
@@ -116,7 +123,7 @@ dd:after {
     display: grid; 
     grid-template-columns: auto auto auto auto auto auto; 
     column-gap: 24px; 
-    row-gap:24px
+    row-gap: 24px
 }
 .about--logos img {
     max-width: 100%;
@@ -133,9 +140,40 @@ dd:after {
 .organizations--partners img {
     float: left;
     height: 100px;
+    margin-right: 16px;
 }
 @media screen and (min-width: 1024px) {
     .organizations--partners img {
         height: 150px;
     }
+}
+.organizations--executive-office {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 4rem;
+    row-gap: 2rem;
+}
+@media screen and (min-width: 769px) {
+    .organizations--executive-office {
+        grid-template-columns: auto auto;
+    }
+}
+.organizations--executive-office article {
+    max-width: 15.5rem;
+}
+.organizations--executive-office img.person {
+    height: 225px;
+}
+.organizations--executive-office h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+}
+.organizations--executive-office .person-title {
+    font-style: italic;
+}
+.organizations--executive-office .person-affiliation {
+    display: flex;
+}
+.organizations--executive-office .person-affiliation img {
+    height: 80px;
 }
