@@ -100,6 +100,77 @@ dd:after {
 }
 
 // Content
+.explore-data--tags button {
+    background-color: oklch(92.8% 0.006 264.531);
+    border-radius: calc(infinity*1px);
+    padding: 0.3rem 0.8rem;
+    font-size: 1.0rem;
+    color: oklch(37.3% 0.034 259.733);
+    text-wrap: nowrap;
+    cursor: pointer;
+    border: none;
+    margin-inline: 0.2rem;
+    margin-block: 0.2rem;
+}
+.explore-data--tags button.active {
+    background-color: oklch(54.6% 0.245 262.881);
+    color: white;
+}
+.explore-data--tools {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 4rem;
+    row-gap: 2rem;
+}
+@media screen and (min-width: 769px) {
+    .explore-data--tools {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+.explore-data--tools article {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid oklch(86.9% 0.022 252.894);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.explore-data--tools article:hover {
+    background-color: oklch(96.8% 0.007 247.896);
+}
+.explore-data--tools article img {
+    height: 192px;
+    width: 100%;
+    object-fit: contain;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.explore-data--tools article div {
+    flex-grow: 1;
+}
+.explore-data--tools article h3 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.explore-data--tools article h3 a {
+    color: $color-sbdi-dark-blue;
+    text-decoration: none;
+}
+.explore-data--tools article .tool-description ul {
+    margin-top: 0.5rem;
+    line-height: 1.2rem;
+}
+.explore-data--tools footer {
+    font-size: 0.9rem;
+}
+.explore-data--tools footer span {
+    background-color: oklch(92.8% 0.006 264.531);
+    border-radius: calc(infinity*1px);
+    color: oklch(37.3% 0.034 259.733);
+    text-wrap: nowrap;
+}
+
 .support--courses article {
     border-bottom: 4px solid oklch(92.9% 0.013 255.508);
     margin-top: 2rem;

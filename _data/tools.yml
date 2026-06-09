@@ -1,48 +1,23 @@
-- name: Bioatlas – find and access biodiversity data
+- name: Find and access biodiversity data
   tags: 
     - Search biodiversity datasets
     - Visualize/explore
-  image: bioatlas.png
-  image-class: object-cover
+  image: bioatlas.jpg
+  image-style: "object-fit: cover"
   description: >-
-    The Bioatlas allows you to find and access Swedish biodiversity data, and includes:
+    Find and access Swedish biodiversity data:
     <ul>
-      <li>The collectory: browse data providers and datasets</li>
+      <li>Browse data providers and datasets</li>
       <li>A search interface: search for data</li>
     </ul>
-    The SBDI Bioatlas is the Swedish instance of the core components in the Living Atlases platform.
-  link: https://bioatlas.biodiversitydata.se
-
-- name: Spatial Portal – visualize and analyze biodiversity data
-  tags:
-    - Spatial analysis
-    - Visualize/explore
-  image: spatial.png
-  image-class: object-cover
-  description: >-
-    The Spatial Portal is a tool that allows users to visualize and analyze Swedish biodiversity 
-    data in a spatial context – to understand and analyze biodiversity and its relationship with 
-    the environment.
-    <ul>
-      <li>Map and analyze species occurrences alongside environmental and contextual data: map 
-      species distributions, explore relationships between species and environment, and conduct 
-      spatial analyses</li>
-      <li>Key features include: mapping species occurrences, integrating environmental data layers 
-      to analyze species' habitat preferences and distributions, spatial analysis tools, data 
-      import and export, visualisation on maps and in charts</li>
-    </ul>
-    <svg aria-hidden="true" class="h-4 mb-1 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-      <path fill="currentColor" d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"/>
-    </svg>
-    <em>This portal requires login</em>
-  link: https://spatial.biodiversitydata.se
+  link: /occurrence/search
 
 - name: BioCollect – data collection tool for biodiversity science
   tags:
     - Systematic inventories
     - Project management
   image: Cygnus.cygnus_johan.backman_CC-BY-NC-1536x895.jpg
-  image-class: object-cover
+  image-style: "object-fit: cover"
   description: >-
     BioCollect allows to set up projects with specified systematic inventory schemes and coordinate 
     the work with staff or volunteers collecting data. BioCollect is designed for researchers, 
@@ -54,7 +29,7 @@
       <li>Standardized data flow</li>
       <li>Quality checks and finally data publishing</li>
     </ul>
-    <svg aria-hidden="true" class="h-4 mb-1 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <svg aria-hidden="true" class="icon-default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
       <path fill="currentColor" d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"/>
     </svg>
     <em>This portal requires login</em>
@@ -148,7 +123,7 @@
     - Biologging data
     - Visualize/explore
   image: wram.png
-  image-class: object-cover
+  image-style: "object-fit: cover"
   description: >-
     SLU WRAM is a national knowledge centre and platform for sensor data from animals used to 
     understand animal behaviour, movement patterns and health.
@@ -165,7 +140,7 @@
     - Biologging data
     - Visualize/explore
   image: blacktern_example1-1536x1473.jpg
-  image-class: object-cover
+  image-style: "object-fit: cover"
   description: >-
     The SBDI Biologging Portal is a portal for exploring data through a meta-data register.
     <ul>
@@ -182,7 +157,7 @@
   tags:
     - Marine data
   image: subsim_logo_blue.png
-  image-class: object-contain px-3
+  image-style: "object-fit: contain; padding: 0.75rem;"
   description: >-
     SUBSIM is a platform for efficient management and processing of underwater image and video 
     survey data. SUBSIM provides functions to conduct research and automated monitoring of the 
@@ -206,12 +181,3 @@
     using filters on functional annotation and/or taxonomy, or by sequence searches using BLAST.
     Or download the whole dataset.  
   link: https://bags.serve.scilifelab.se/app/bags
-
-- name: sbdi4r2 – Access SBDI with R Studio
-  tags:
-    - Programming
-  description: >-
-    SBDI provides sbdi4r2, an R package to search and download data from the SBDI data portal.
-    sbdi4r2 provides the functions to find, access, combine and visualise data on Swedish plants
-    and animals through queries in any of the datasets provided by SBDI. 
-  link: https://github.com/biodiversitydata-se/sbdi4r2/
