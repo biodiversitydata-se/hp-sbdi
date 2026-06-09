@@ -18,7 +18,11 @@
 - text: Publish data
   href: /publish-data/
 - text: Events
-  href: /events/
+  menu:
+  - text: Our events
+    href: /events/
+  - text: Other events
+    href: /events/other/
 - text: Support
   href: /support/
 - text: About
